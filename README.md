@@ -23,3 +23,7 @@ npx nx test --watch=false
 
 nx g @nx/angular:app appName
 nx g @nx/angular:lib libName
+
+# backend
+
+https://ratemydoggo.azurewebsites.net/swagger
