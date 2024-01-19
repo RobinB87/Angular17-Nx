@@ -18,3 +18,8 @@ npx nx build
 npx nx test --watch=false
 
 - if you invoke the build or test command multiple times, without changing code, nx caching comes in to play and is fast
+
+# create apps or libs
+
+nx g @nx/angular:app appName
+nx g @nx/angular:lib libName
