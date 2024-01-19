@@ -6,8 +6,10 @@ npx nx init --integrated => (apps + libs folder; hence monorepo)
 new:
 npx create-nx-workspace@latest =>
 
-- standalone
-- integrated monorepo
+- package based (not an option anymore?) => pure repo, do what you want
+- standalone => contains all nx features, but is not a monorepo, useful for building single apps
+- integrated monorepo => preconfigured open for multiple apps and libs
+- migration: migrate existing app to nx
 
 # Use Nx cli
 
