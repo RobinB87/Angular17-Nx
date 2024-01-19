@@ -43,3 +43,5 @@ Thumbs.db
 
 # Zone Identifier
 *Zone.Identifier
+
+.nx/cache

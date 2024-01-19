@@ -39,5 +39,9 @@
         "^production"
       ]
     }
-  }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "nxCloudAccessToken": "ZjI0NDQ2ZjMtOTAxMS00MTYxLTlhNjktYmNmMjdmZmI5NWEwfHJlYWQtd3JpdGU="
 }
