@@ -1,7 +1,7 @@
 # AngularCliToMigrate
 
 npx nx@latest init => project.json is created
-npx nx init --integrated => when there are multiple projects?
+npx nx init --integrated => (apps + libs folder; hence monorepo)
 
 new:
 npx create-nx-workspace@latest =>
