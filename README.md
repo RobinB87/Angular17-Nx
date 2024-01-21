@@ -27,3 +27,7 @@ nx g @nx/angular:lib libName
 # backend
 
 https://ratemydoggo.azurewebsites.net/swagger
+
+# doggo app
+
+npx nx g @nrwl/angular:lib util-environments --directory=shared

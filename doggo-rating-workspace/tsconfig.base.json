@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ps-doggo-rating/shared/util-environments": [
+        "libs/shared/util-environments/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
