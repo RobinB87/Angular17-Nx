@@ -54,9 +54,121 @@
     "typescript": "~4.9.5"
   },
   "lockFileHash": "45508318513e6fedb52ec98871e6163f02b7d323e751730e6373e1f61c24591e",
-  "pathMappings": {},
+  "pathMappings": {
+    "@ps-doggo-rating/shared/util-environments": [
+      "libs/shared/util-environments/src/index.ts"
+    ]
+  },
   "nxJsonPlugins": [],
   "nodes": {
+    "shared-util-environments": {
+      "name": "shared-util-environments",
+      "type": "lib",
+      "data": {
+        "name": "shared-util-environments",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "libs/shared/util-environments/src",
+        "prefix": "ps-doggo-rating",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nrwl/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/util-environments/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/shared/util-environments/**/*.ts",
+                "libs/shared/util-environments/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "root": "libs/shared/util-environments",
+        "implicitDependencies": [],
+        "files": [
+          {
+            "file": "libs/shared/util-environments/.eslintrc.json",
+            "hash": "11959527396296674411"
+          },
+          {
+            "file": "libs/shared/util-environments/jest.config.ts",
+            "hash": "13840302913378277764"
+          },
+          {
+            "file": "libs/shared/util-environments/project.json",
+            "hash": "16596236625062609080"
+          },
+          {
+            "file": "libs/shared/util-environments/README.md",
+            "hash": "1589050181971522613"
+          },
+          {
+            "file": "libs/shared/util-environments/src/index.ts",
+            "hash": "17629727789544416765"
+          },
+          {
+            "file": "libs/shared/util-environments/src/lib/environment.prod.ts",
+            "hash": "12429578523182885529"
+          },
+          {
+            "file": "libs/shared/util-environments/src/lib/environment.ts",
+            "hash": "9084879022349367499"
+          },
+          {
+            "file": "libs/shared/util-environments/src/test-setup.ts",
+            "hash": "17711435995618823417",
+            "dependencies": [
+              {
+                "source": "shared-util-environments",
+                "target": "npm:jest-preset-angular",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/util-environments/tsconfig.json",
+            "hash": "8526453262384300416"
+          },
+          {
+            "file": "libs/shared/util-environments/tsconfig.lib.json",
+            "hash": "9558018702647581490"
+          },
+          {
+            "file": "libs/shared/util-environments/tsconfig.spec.json",
+            "hash": "4003217966072204204"
+          }
+        ]
+      }
+    },
     "doggo-rating-app-e2e": {
       "name": "doggo-rating-app-e2e",
       "type": "e2e",
@@ -213,6 +325,12 @@
                     "maximumError": "4kb"
                   }
                 ],
+                "fileReplacements": [
+                  {
+                    "replace": "libs/shared/environments/src/lib/environment.ts",
+                    "with": "libs/shared/environments/src/lib/environment.prod.ts"
+                  }
+                ],
                 "outputHashing": "all"
               },
               "development": {
@@ -298,7 +416,7 @@
           },
           {
             "file": "apps/doggo-rating-app/project.json",
-            "hash": "3384761745188283040"
+            "hash": "8333733692790454511"
           },
           {
             "file": "apps/doggo-rating-app/src/app/about/container/about/about.component.css",
@@ -31237,6 +31355,13 @@
       {
         "source": "npm:zone.js",
         "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "shared-util-environments": [
+      {
+        "source": "shared-util-environments",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
