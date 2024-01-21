@@ -1,0 +1,267 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "~17.0.0",
+    "@angular/common": "~17.0.0",
+    "@angular/compiler": "~17.0.0",
+    "@angular/core": "~17.0.0",
+    "@angular/forms": "~17.0.0",
+    "@angular/platform-browser": "~17.0.0",
+    "@angular/platform-browser-dynamic": "~17.0.0",
+    "@angular/router": "~17.0.0",
+    "@nx/angular": "17.2.8",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.0",
+    "@angular-devkit/build-angular": "~17.0.0",
+    "@angular-devkit/core": "~17.0.0",
+    "@angular-devkit/schematics": "~17.0.0",
+    "@angular-eslint/eslint-plugin": "~17.0.0",
+    "@angular-eslint/eslint-plugin-template": "~17.0.0",
+    "@angular-eslint/template-parser": "~17.0.0",
+    "@angular/cli": "~17.0.0",
+    "@angular/compiler-cli": "~17.0.0",
+    "@angular/language-service": "~17.0.0",
+    "@nx/cypress": "17.2.8",
+    "@nx/eslint": "17.2.8",
+    "@nx/eslint-plugin": "17.2.8",
+    "@nx/jest": "17.2.8",
+    "@nx/js": "17.2.8",
+    "@nx/web": "17.2.8",
+    "@nx/workspace": "17.2.8",
+    "@schematics/angular": "~17.0.0",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.16.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "cypress": "^13.0.0",
+    "eslint": "~8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-preset-angular": "~13.1.4",
+    "jsonc-eslint-parser": "^2.1.0",
+    "nx": "17.2.8",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "doggo-rating-app": [
+        {
+          "file": "apps/doggo-rating-app/.eslintrc.json",
+          "hash": "14645695244462859426"
+        },
+        {
+          "file": "apps/doggo-rating-app/jest.config.ts",
+          "hash": "16732968417939266772"
+        },
+        {
+          "file": "apps/doggo-rating-app/project.json",
+          "hash": "2906137893700493801"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.component.html",
+          "hash": "16707429064832929131"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.component.spec.ts",
+          "hash": "131932413552553953",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.component.ts",
+          "hash": "17247985667330062146",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.config.ts",
+          "hash": "10618457967269332155",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/app/nx-welcome.component.ts",
+          "hash": "8370659571423444699",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/index.html",
+          "hash": "14642589955197565215"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/doggo-rating-app/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "apps/doggo-rating-app/tsconfig.editor.json",
+          "hash": "17511610827034788226"
+        },
+        {
+          "file": "apps/doggo-rating-app/tsconfig.json",
+          "hash": "11271817794535700763"
+        },
+        {
+          "file": "apps/doggo-rating-app/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "doggo-rating-app-e2e": [
+        {
+          "file": "apps/doggo-rating-app-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/cypress.config.ts",
+          "hash": "12586416982398116375",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/project.json",
+          "hash": "15108929501866805785"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/src/e2e/app.cy.ts",
+          "hash": "1422260496032775772"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/doggo-rating-app-e2e/tsconfig.json",
+          "hash": "4332380883180617610"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8491837053101957257"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "3395189204293871444"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "README.md",
+        "hash": "10802417575966926870"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13532100572866254710"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5162733671792523189"
+      },
+      {
+        "file": "package.json",
+        "hash": "12165286292440209903"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      }
+    ]
+  }
+}
