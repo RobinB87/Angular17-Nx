@@ -55,6 +55,12 @@
   },
   "lockFileHash": "45508318513e6fedb52ec98871e6163f02b7d323e751730e6373e1f61c24591e",
   "pathMappings": {
+    "@ps-doggo-rating/shared/util-auth": [
+      "libs/shared/util-auth/src/index.ts"
+    ],
+    "@ps-doggo-rating/shared/util-common": [
+      "libs/shared/util-common/src/index.ts"
+    ],
     "@ps-doggo-rating/shared/util-environments": [
       "libs/shared/util-environments/src/index.ts"
     ]
@@ -266,6 +272,122 @@
           {
             "file": "apps/doggo-rating-app-e2e/tsconfig.json",
             "hash": "3839629211904585536"
+          }
+        ]
+      }
+    },
+    "shared-util-common": {
+      "name": "shared-util-common",
+      "type": "lib",
+      "data": {
+        "name": "shared-util-common",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "libs/shared/util-common/src",
+        "prefix": "ps-doggo-rating",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nrwl/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/util-common/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/shared/util-common/**/*.ts",
+                "libs/shared/util-common/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "root": "libs/shared/util-common",
+        "implicitDependencies": [],
+        "files": [
+          {
+            "file": "libs/shared/util-common/.eslintrc.json",
+            "hash": "11959527396296674411"
+          },
+          {
+            "file": "libs/shared/util-common/jest.config.ts",
+            "hash": "4935395818057778561"
+          },
+          {
+            "file": "libs/shared/util-common/project.json",
+            "hash": "4507896845699131181"
+          },
+          {
+            "file": "libs/shared/util-common/README.md",
+            "hash": "4056659762148370766"
+          },
+          {
+            "file": "libs/shared/util-common/src/index.ts",
+            "hash": "10034444380447721890"
+          },
+          {
+            "file": "libs/shared/util-common/src/lib/shared-util-common.module.ts",
+            "hash": "12180077825990749041",
+            "dependencies": [
+              {
+                "source": "shared-util-common",
+                "target": "npm:@angular/core",
+                "type": "static"
+              },
+              {
+                "source": "shared-util-common",
+                "target": "npm:@angular/common",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/util-common/src/test-setup.ts",
+            "hash": "17711435995618823417",
+            "dependencies": [
+              {
+                "source": "shared-util-common",
+                "target": "npm:jest-preset-angular",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/util-common/tsconfig.json",
+            "hash": "8526453262384300416"
+          },
+          {
+            "file": "libs/shared/util-common/tsconfig.lib.json",
+            "hash": "9558018702647581490"
+          },
+          {
+            "file": "libs/shared/util-common/tsconfig.spec.json",
+            "hash": "4003217966072204204"
           }
         ]
       }
@@ -516,6 +638,122 @@
           {
             "file": "apps/doggo-rating-app/tsconfig.spec.json",
             "hash": "7670846817526018622"
+          }
+        ]
+      }
+    },
+    "shared-util-auth": {
+      "name": "shared-util-auth",
+      "type": "lib",
+      "data": {
+        "name": "shared-util-auth",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "libs/shared/util-auth/src",
+        "prefix": "ps-doggo-rating",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nrwl/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/util-auth/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/shared/util-auth/**/*.ts",
+                "libs/shared/util-auth/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "root": "libs/shared/util-auth",
+        "implicitDependencies": [],
+        "files": [
+          {
+            "file": "libs/shared/util-auth/.eslintrc.json",
+            "hash": "11959527396296674411"
+          },
+          {
+            "file": "libs/shared/util-auth/jest.config.ts",
+            "hash": "17805988705534644968"
+          },
+          {
+            "file": "libs/shared/util-auth/project.json",
+            "hash": "14221568875420750752"
+          },
+          {
+            "file": "libs/shared/util-auth/README.md",
+            "hash": "1236082205817484580"
+          },
+          {
+            "file": "libs/shared/util-auth/src/index.ts",
+            "hash": "11748954398915411223"
+          },
+          {
+            "file": "libs/shared/util-auth/src/lib/shared-util-auth.module.ts",
+            "hash": "486603791895024080",
+            "dependencies": [
+              {
+                "source": "shared-util-auth",
+                "target": "npm:@angular/core",
+                "type": "static"
+              },
+              {
+                "source": "shared-util-auth",
+                "target": "npm:@angular/common",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/util-auth/src/test-setup.ts",
+            "hash": "17711435995618823417",
+            "dependencies": [
+              {
+                "source": "shared-util-auth",
+                "target": "npm:jest-preset-angular",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/util-auth/tsconfig.json",
+            "hash": "8526453262384300416"
+          },
+          {
+            "file": "libs/shared/util-auth/tsconfig.lib.json",
+            "hash": "9558018702647581490"
+          },
+          {
+            "file": "libs/shared/util-auth/tsconfig.spec.json",
+            "hash": "4003217966072204204"
           }
         ]
       }
@@ -31042,6 +31280,11 @@
     "doggo-rating-app-e2e": [
       {
         "source": "doggo-rating-app-e2e",
+        "target": "doggo-rating-app",
+        "type": "implicit"
+      },
+      {
+        "source": "doggo-rating-app-e2e",
         "target": "npm:cypress",
         "type": "static"
       },
@@ -31049,11 +31292,23 @@
         "source": "doggo-rating-app-e2e",
         "target": "npm:@nrwl/cypress",
         "type": "static"
+      }
+    ],
+    "shared-util-common": [
+      {
+        "source": "shared-util-common",
+        "target": "npm:@angular/core",
+        "type": "static"
       },
       {
-        "source": "doggo-rating-app-e2e",
-        "target": "doggo-rating-app",
-        "type": "implicit"
+        "source": "shared-util-common",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "shared-util-common",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "doggo-rating-app": [
@@ -31084,6 +31339,23 @@
       },
       {
         "source": "doggo-rating-app",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "shared-util-auth": [
+      {
+        "source": "shared-util-auth",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "shared-util-auth",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "shared-util-auth",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
