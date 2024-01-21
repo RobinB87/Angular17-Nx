@@ -1,25 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { AuthActions } from './auth/store/auth.actions';
-import { LayoutComponent } from './shell/layout/layout.component';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ps-doggo-rating-root',
   templateUrl: './app.component.html',
-  standalone: true,
-  styleUrls: ['./app.component.css'],
-  imports: [LayoutComponent],
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-  title = 'ratemydoggo';
-
-  constructor(private store: Store) {}
-
-  ngOnInit(): void {
-    this.checkAuth();
-  }
-
-  private checkAuth() {
-    this.store.dispatch(AuthActions.checkAuth());
-  }
+export class AppComponent {
+  title = 'doggo-rating-app';
 }

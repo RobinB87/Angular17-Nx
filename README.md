@@ -30,4 +30,5 @@ https://ratemydoggo.azurewebsites.net/swagger
 
 # doggo app
 
+npx nx g @nrwl/angular:app doggo-rating-app
 npx nx g @nrwl/angular:lib util-environments --directory=shared
