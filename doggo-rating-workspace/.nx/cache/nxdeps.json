@@ -55,6 +55,9 @@
   },
   "lockFileHash": "45508318513e6fedb52ec98871e6163f02b7d323e751730e6373e1f61c24591e",
   "pathMappings": {
+    "@ps-doggo-rating/shared/ui-common": [
+      "libs/shared/ui-common/src/index.ts"
+    ],
     "@ps-doggo-rating/shared/util-auth": [
       "libs/shared/util-auth/src/index.ts"
     ],
@@ -348,23 +351,7 @@
           },
           {
             "file": "libs/shared/util-common/src/index.ts",
-            "hash": "10034444380447721890"
-          },
-          {
-            "file": "libs/shared/util-common/src/lib/shared-util-common.module.ts",
-            "hash": "12180077825990749041",
-            "dependencies": [
-              {
-                "source": "shared-util-common",
-                "target": "npm:@angular/core",
-                "type": "static"
-              },
-              {
-                "source": "shared-util-common",
-                "target": "npm:@angular/common",
-                "type": "static"
-              }
-            ]
+            "hash": "3244421341483603138"
           },
           {
             "file": "libs/shared/util-common/src/test-setup.ts",
@@ -642,6 +629,106 @@
         ]
       }
     },
+    "shared-ui-common": {
+      "name": "shared-ui-common",
+      "type": "lib",
+      "data": {
+        "name": "shared-ui-common",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "libs/shared/ui-common/src",
+        "prefix": "ps-doggo-rating",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nrwl/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/ui-common/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/shared/ui-common/**/*.ts",
+                "libs/shared/ui-common/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "root": "libs/shared/ui-common",
+        "implicitDependencies": [],
+        "files": [
+          {
+            "file": "libs/shared/ui-common/.eslintrc.json",
+            "hash": "11959527396296674411"
+          },
+          {
+            "file": "libs/shared/ui-common/jest.config.ts",
+            "hash": "13123409128067179384"
+          },
+          {
+            "file": "libs/shared/ui-common/project.json",
+            "hash": "14691078403335689363"
+          },
+          {
+            "file": "libs/shared/ui-common/README.md",
+            "hash": "2532171483413604080"
+          },
+          {
+            "file": "libs/shared/ui-common/src/index.ts",
+            "hash": "3244421341483603138"
+          },
+          {
+            "file": "libs/shared/ui-common/src/test-setup.ts",
+            "hash": "17711435995618823417",
+            "dependencies": [
+              {
+                "source": "shared-ui-common",
+                "target": "npm:jest-preset-angular",
+                "type": "static"
+              }
+            ]
+          },
+          {
+            "file": "libs/shared/ui-common/tsconfig.json",
+            "hash": "8526453262384300416"
+          },
+          {
+            "file": "libs/shared/ui-common/tsconfig.lib.json",
+            "hash": "9558018702647581490"
+          },
+          {
+            "file": "libs/shared/ui-common/tsconfig.spec.json",
+            "hash": "4003217966072204204"
+          }
+        ]
+      }
+    },
     "shared-util-auth": {
       "name": "shared-util-auth",
       "type": "lib",
@@ -714,23 +801,7 @@
           },
           {
             "file": "libs/shared/util-auth/src/index.ts",
-            "hash": "11748954398915411223"
-          },
-          {
-            "file": "libs/shared/util-auth/src/lib/shared-util-auth.module.ts",
-            "hash": "486603791895024080",
-            "dependencies": [
-              {
-                "source": "shared-util-auth",
-                "target": "npm:@angular/core",
-                "type": "static"
-              },
-              {
-                "source": "shared-util-auth",
-                "target": "npm:@angular/common",
-                "type": "static"
-              }
-            ]
+            "hash": "3244421341483603138"
           },
           {
             "file": "libs/shared/util-auth/src/test-setup.ts",
@@ -31297,16 +31368,6 @@
     "shared-util-common": [
       {
         "source": "shared-util-common",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "shared-util-common",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "shared-util-common",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -31343,17 +31404,14 @@
         "type": "static"
       }
     ],
+    "shared-ui-common": [
+      {
+        "source": "shared-ui-common",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "shared-util-auth": [
-      {
-        "source": "shared-util-auth",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "shared-util-auth",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
       {
         "source": "shared-util-auth",
         "target": "npm:jest-preset-angular",
