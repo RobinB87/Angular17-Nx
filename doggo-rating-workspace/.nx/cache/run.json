@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx lint shared-util-environments",
-    "startTime": "2024-01-21T12:07:31.354Z",
-    "endTime": "2024-01-21T12:07:32.986Z",
+    "startTime": "2024-01-21T12:15:32.764Z",
+    "endTime": "2024-01-21T12:15:32.782Z",
     "inner": false
   },
   "tasks": [
@@ -11,10 +11,10 @@
       "target": "lint",
       "projectName": "shared-util-environments",
       "hash": "7d67283e7c5df3adda31de6574f822f8f8241c33fb81751c644c64f52cd72fa9",
-      "startTime": "2024-01-21T12:07:31.371Z",
-      "endTime": "2024-01-21T12:07:32.986Z",
+      "startTime": "2024-01-21T12:15:32.778Z",
+      "endTime": "2024-01-21T12:15:32.782Z",
       "params": "",
-      "cacheStatus": "cache-miss",
+      "cacheStatus": "local-cache-hit",
       "status": 0
     }
   ]
